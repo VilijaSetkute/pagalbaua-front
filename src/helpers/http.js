@@ -1,3 +1,8 @@
+const publicUrl = "http://104.248.192.185:4000"
+const localUrl = 'http://localhost:4000'
+const production = true
+const serverULR = production ? publicUrl : localUrl
+
 export default {
     post: async (url, data) => {
         const options = {
@@ -6,7 +11,7 @@ export default {
             credentials: "include",
             body: JSON.stringify(data)
         }
-        let res = await fetch('http://localhost:4000'+url, options)
+        let res = await fetch(serverULR + url, options)
         res = await res.json()
         return res
     },
@@ -16,7 +21,7 @@ export default {
             headers: {"content-type": "application/json"},
             credentials: "include"
         }
-        let res = await fetch('http://localhost:4000'+url, options)
+        let res = await fetch(serverULR + url, options)
         res = await res.json()
         return res
     },
