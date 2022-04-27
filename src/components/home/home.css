@@ -1,0 +1,94 @@
+.card-box {
+    max-width: 98%;
+    min-height: 175px;
+    cursor: pointer;
+    background-color: #0D6EFD;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    transition: 0.5s;
+    margin: 10px;
+    padding: 10px;
+}
+.card-box:hover {
+    background-color: rgba(255,213,0,1);
+    color: rgba(0,91,187,1);
+}
+
+.flagbox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(0,91,187);
+    background: linear-gradient(180deg, rgba(0,91,187,1) 30%, rgba(255,213,0,1) 100%);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+.flagboxLT {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(255,184,28,1) 25%, rgba(0,106,56,1) 50%, rgba(190,58,52,1) 85%);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+.flagboxWEB {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(41, 124, 211);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.hometext {
+    display: block;
+}
+
+.card-box__inner {
+    display: none;
+    opacity: 0;
+}
+
+.card-box:hover .card-box__inner {
+    display: block;
+    opacity: 1;
+}
+.card-box:hover .flagbox {
+    display: none;
+    opacity: 0;
+}
+.card-box:hover .flagboxLT {
+    display: none;
+    opacity: 0;
+}
+.card-box:hover .flagboxWEB {
+    display: none;
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 1070px) {
+    .startpage {
+        flex-direction: column;
+    }
+    .card-box {
+        width: 95vw;
+        margin: 10px auto;
+    }
+    .card-box:first-child {
+        margin-top: 20px;
+    }
+    .hometext {
+        display: none;
+    }
+}

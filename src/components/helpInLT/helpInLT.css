@@ -1,0 +1,9 @@
+@media (max-width: 400px) {
+    .lt-help-legend {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .legend-box {
+        max-width: 90px;
+    }
+}

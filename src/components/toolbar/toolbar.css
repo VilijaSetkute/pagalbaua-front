@@ -1,0 +1,72 @@
+.toolbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,91,187);
+    z-index: 999;
+    box-shadow: 0 10px 10px -10px #222;
+}
+
+.toolbar a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    height: auto;
+    padding: 20px;
+    z-index: 999;
+}
+
+.flagbox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(0,91,187);
+    background: linear-gradient(180deg, rgba(0,91,187,1) 30%, rgba(255,213,0,1) 100%);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.menuicon {
+    margin: 0 10px;
+    color: white;
+    display: none;
+}
+
+.menuposition {
+    flex-direction: initial;
+}
+
+.fas {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 1070px) {
+    .menuicon {
+        display: flex;
+    }
+    .menuposition {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menuposition a {
+        text-align: right;
+        border-top: 1px solid #7d94b7;
+        align-items: center;
+        justify-content: center;
+    }
+    .toolbar {
+        position: fixed;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: space-between;
+    }
+    .toolbar a {
+        padding: 10px;
+    }
+}

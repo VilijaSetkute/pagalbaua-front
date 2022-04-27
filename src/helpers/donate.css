@@ -1,0 +1,22 @@
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fa-coins {
+    font-size: 15px;
+}
+.fa-hand-holding {
+    font-size: 30px;
+}
+
+.fa-hand-holding-medical, .fa-hands, .fa-hands-helping, .fa-hand-holding-heart {
+    margin-top: 17px;
+    font-size: 30px;
+}
+
+.zindex {
+    z-index: -1;
+}
+

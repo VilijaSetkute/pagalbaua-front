@@ -1,0 +1,26 @@
+.footer {
+    height: 80px;
+    width: 100%;
+    padding: 15px;
+    background-color: #131212;
+    color: white;
+    font-size: 14px;
+    z-index: 99;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1070px) {
+    .footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .footer {
+        height: 100px;
+    }
+}

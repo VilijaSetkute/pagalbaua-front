@@ -1,0 +1,18 @@
+.about .text {
+    text-align: justify;
+}
+
+.moto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.moto img {
+    height: 100px;
+    margin: 0 20px;
+}

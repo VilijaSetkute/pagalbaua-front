@@ -1,0 +1,87 @@
+.org-block {
+    width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    position: relative;
+}
+
+.org-box {
+    width: 220px;
+    height: 200px;
+    background-color: #0D6EFD;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.org-box:hover {
+    opacity: 0.8;
+}
+
+.legend-box {
+    width: 200px;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+button[type=button]:hover a {
+    color: white;
+}
+
+.child {
+    padding: 30px 5px 0 5px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1070px) {
+    .org-block {
+        width: 700px;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .org-block {
+        width: 460px;
+        grid-template-columns: auto auto;
+    }
+    .legend-box {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .org-block {
+        margin: 0;
+        width: 100%;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        column-gap: 0;
+    }
+    .org-box {
+        width: 100%;
+        min-height: 100px;
+        height: fit-content;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .child {
+        height: fit-content;
+    }
+}

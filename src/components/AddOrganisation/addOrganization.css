@@ -1,0 +1,12 @@
+input::placeholder, textarea::placeholder {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.checkboxList label {
+    font-size: 14px;
+}
+
+textarea {
+    word-break: break-word;
+}

@@ -1,0 +1,20 @@
+.webBox {
+    flex-wrap: nowrap;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.mobile-margin {
+    padding-top: 135px;
+}
+
+@media screen and (max-width: 1070px) {
+    .webBox {
+        flex-wrap: wrap;
+    }
+    .mobile-margin {
+        padding-top: 0;
+    }
+}
