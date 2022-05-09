@@ -20,9 +20,9 @@ const Refugees = () => {
     }, [])
 
     return (
-        <div className='my-container-child' style={{width: '700px'}}>
+        <div className='my-container-child' style={{maxWidth: '700px'}}>
             <div style={{height: '70px'}}/>
-            <div className='mx-3 mt-3 mb-5'>Laikinai informacija yra pateikiama <span className='text-primary fw-bold'>tik Vilniaus miestui</span>. Informacija apie kitų didžiųjų miestų paramos punktus bus pateikiama netrukus.</div>
+            <div className='mx-3 mt-3 mb-5 justified-text'>Laikinai informacija yra pateikiama <span className='text-primary fw-bold'>tik Vilniaus miestui</span>. Informacija apie kitų didžiųjų miestų paramos punktus bus pateikiama netrukus.</div>
             <div className='org-block'>
 
                 {getPoints.map((x, i) => <RefugeeCard
