@@ -67,7 +67,7 @@ button[type=button]:hover a {
 
 @media screen and (max-width: 600px) {
     .org-block {
-        margin: 0;
+        margin: 0 auto;
         width: 100%;
         grid-template-columns: auto;
         row-gap: 10px;
