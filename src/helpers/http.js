@@ -1,7 +1,7 @@
-const publicUrl = "https://back.pagalbaukrainai.lt"
-const localUrl = 'http://localhost:4000'
-const production = true
-const serverULR = production ? publicUrl : localUrl
+const publicUrl = "https://back.pagalbaukrainai.lt";
+const localUrl = 'http://localhost:4000';
+const production = true;
+const serverULR = production ? publicUrl : localUrl;
 
 export default {
     post: async (url, data) => {
