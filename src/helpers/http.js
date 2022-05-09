@@ -1,4 +1,4 @@
-const publicUrl = "https://pagalbaukrainai.lt:4000"
+const publicUrl = "https://back.pagalbaukrainai.lt"
 const localUrl = 'http://localhost:4000'
 const production = true
 const serverULR = production ? publicUrl : localUrl
