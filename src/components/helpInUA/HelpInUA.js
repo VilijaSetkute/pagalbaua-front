@@ -34,7 +34,7 @@ const HelpInUa = () => {
     return (
         <div>
             <div style={{height: '70px'}}/>
-            <div className='d-flex justify-content-center mb-5'>
+            <div className='lt-help-legend d-flex justify-content-center mb-3'>
                 <div className='legend-box m-1'>
                     <DonateMoney/>
                     <div className='text-center'>Finansinė pagalba</div>
@@ -51,18 +51,18 @@ const HelpInUa = () => {
                 </div>
             </div>
 
-            <div className='d-flex justify-content-center m-5'>
+            <div className='d-flex justify-content-center mb-5 flex-wrap'>
                 <button onClick={() => getAllOrgs()} type="button"
-                        className={`mx-1 btn ${getFilter === 'all' ? 'btn-warning text-primary fw-bold' : 'btn-outline-primary'}`}>Visi
+                        className={getFilter === 'all' ? 'm-1 btn btn-warning text-primary fw-bold' : 'm-1 btn btn-outline-primary'}>Visos organizacijos
                 </button>
                 <button onClick={() => getLocation('country')} type="button"
-                        className={`mx-1 btn ${getFilter === 'country' ? 'btn-warning text-primary fw-bold' : 'btn-outline-primary'}`}>Visa Lietuva
+                        className={getFilter === 'country' ? 'm-1 btn btn-warning text-primary fw-bold' : 'm-1 btn btn-outline-primary'}>Veikia visoje Lietuvoje
                 </button>
                 <button onClick={() => getLocation('vilnius')} type="button"
-                        className={`mx-1 btn ${getFilter === 'vilnius' ? 'btn-warning text-primary fw-bold' : 'btn-outline-primary'}`}>Vilnius
+                        className={getFilter === 'vilnius' ? 'm-1 btn btn-warning text-primary fw-bold' : 'm-1 btn btn-outline-primary'}>Veikia Vilniuje
                 </button>
                 <button onClick={() => getLocation('kaunas')} type="button"
-                        className={`mx-1 btn ${getFilter === 'kaunas' ? 'btn-warning text-primary fw-bold' : 'btn-outline-primary'}`}>Kaunas
+                        className={getFilter === 'kaunas' ? 'm-1 btn btn-warning text-primary fw-bold' : 'm-1 btn btn-outline-primary'}>Veikia Kaune
                 </button>
             </div>
 
