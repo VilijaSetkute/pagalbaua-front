@@ -16,11 +16,13 @@ const HelpInUa = () => {
     const [getOrganisations, setOrganisations] = useState([])
 
     async function getAllOrgs() {
+        setFilter('all')
         const data = await http.get('/orgList')
         if (data.success) return setOrganisations(data.allList)
     }
 
     async function getLocation(city) {
+        setFilter(city)
         const data = await http.post('/orgLocation', {city: city})
         if (data.success) return setOrganisations(data.filteredList)
     }
