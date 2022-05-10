@@ -6,3 +6,7 @@
     text-align: center;
     background-color: darkgreen;
 }
+
+.fit-content {
+    width: fit-content;
+}

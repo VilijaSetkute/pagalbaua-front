@@ -10,6 +10,14 @@
     padding-top: 135px;
 }
 
+.webLink:hover a {
+    color: white;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
 @media screen and (max-width: 1070px) {
     .webBox {
         flex-wrap: wrap;

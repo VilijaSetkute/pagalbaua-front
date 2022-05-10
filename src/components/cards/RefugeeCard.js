@@ -4,6 +4,8 @@ import DonateHumanitarian from "../../helpers/DonateHumanitarian";
 import DonateVolunteers from "../../helpers/DonateVolunteers";
 import './cards.css'
 import PickupPoint from "../../helpers/PickupPoint";
+import {faAngleDoubleRight} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const RefugeeCard = ({point, getFilter, getExpanded, setExpanded, getHeight, setHeight}) => {
 
@@ -99,11 +101,18 @@ const RefugeeCard = ({point, getFilter, getExpanded, setExpanded, getHeight, set
 
 
                         {point.website.length > 0 &&
-                            <button type='button' className='btn py-0 btn-outline-primary mb-3 d-flex align-items-center'>
-                                <a href={point.website} target='_blank' rel='noreferrer'
-                                   className='me-3'>{point.linkText}</a>
-                                <div style={{fontSize: '28px'}}>&#129122;</div>
-                            </button>
+                            // <button type='button' className='btn py-0 btn-outline-primary mb-3 d-flex align-items-center'>
+                            //     <a href={point.website} target='_blank' rel='noreferrer'
+                            //        className='me-3'>{point.linkText}</a>
+                            //     <FontAwesomeIcon icon={faAngleDoubleRight} className='fs-4 py-2'/>
+                            // </button>
+                            <div>
+                                <a className='btn py-0 btn-outline-primary my-3 me-3 d-flex align-items-center fit-content'
+                                href={point.website}
+                                target='_blank' rel='noreferrer'>
+                                Oficialus puslapis <FontAwesomeIcon icon={faAngleDoubleRight} className='fs-4 py-2 ps-3 pe-0'/>
+                                </a>
+                            </div>
                         }
 
                     </div>}
