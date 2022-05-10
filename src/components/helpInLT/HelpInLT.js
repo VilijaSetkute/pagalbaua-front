@@ -48,6 +48,7 @@ const HelpInLt = () => {
         if (kidsData.success) {
             setKids(kidsData.kidList)
         }
+        setFilter('all')
     }
 
     async function getLocation(city) {
@@ -75,6 +76,7 @@ const HelpInLt = () => {
         if (kidsData.success) {
             setKids(kidsData.filteredList)
         }
+        setFilter(city)
     }
 
     useEffect(() => {
@@ -115,16 +117,16 @@ const HelpInLt = () => {
 
             <div className='d-flex justify-content-center m-5'>
                 <button onClick={() => getAllOrgs()} type="button"
-                        className={`mx-1 btn ${getFilter === 'all' ? 'btn-warning text-primary fw-bold' : 'btn-outline-primary'}`}>Visi
+                        className={getFilter === 'all' ? 'mx-1 btn btn-warning text-primary fw-bold' : 'mx-1 btn btn-outline-primary'}>Visi
                 </button>
                 <button onClick={() => getLocation('country')} type="button"
-                        className={`mx-1 btn ${getFilter === 'country' ? 'btn-warning text-primary fw-bold' : 'btn-outline-primary'}`}>Visa Lietuva
+                        className={getFilter === 'country' ? 'mx-1 btn btn-warning text-primary fw-bold' : 'mx-1 btn btn-outline-primary'}>Visa Lietuva
                 </button>
                 <button onClick={() => getLocation('vilnius')} type="button"
-                        className={`mx-1 btn ${getFilter === 'vilnius' ? 'btn-warning text-primary fw-bold' : 'btn-outline-primary'}`}>Vilnius
+                        className={getFilter === 'vilnius' ? 'mx-1 btn btn-warning text-primary fw-bold' : 'mx-1 btn btn-outline-primary'}>Vilnius
                 </button>
                 <button onClick={() => getLocation('kaunas')} type="button"
-                        className={`mx-1 btn ${getFilter === 'kaunas' ? 'btn-warning text-primary fw-bold' : 'btn-outline-primary'}`}>Kaunas
+                        className={getFilter === 'kaunas' ? 'mx-1 btn btn-warning text-primary fw-bold' : 'mx-1 btn btn-outline-primary'}>Kaunas
                 </button>
             </div>
 

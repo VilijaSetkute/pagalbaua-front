@@ -76,6 +76,9 @@
     opacity: 0;
 }
 
+.p-75rem {
+    padding: 0.6rem;
+}
 
 @media screen and (max-width: 1070px) {
     .startpage {

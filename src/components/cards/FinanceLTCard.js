@@ -1,5 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import DonateMoney from "../../helpers/DonateMoney";
+import {faAngleDoubleRight} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const FinanceLTCard = ({organisation, getFilter, getExpanded, setExpanded, getHeight, setHeight}) => {
 
@@ -52,11 +54,18 @@ const FinanceLTCard = ({organisation, getFilter, getExpanded, setExpanded, getHe
                         {organisation.donationForms.map((x, i) => <div style={{textAlign: 'left'}} key={i}>&#10003; {x}</div>)}
                     </div>
 
-                    <button type='button' className='btn py-0 btn-outline-primary mb-3 d-flex align-items-center'>
-                        <a href={organisation.website} target='_blank' rel='noreferrer'
-                           className='me-3'>{organisation.linkText}</a>
-                        <div style={{fontSize: '28px'}}>&#129122;</div>
-                    </button>
+                    {/*<button type='button' className='btn py-0 btn-outline-primary mb-3 d-flex align-items-center'>*/}
+                    {/*    <a href={organisation.website} target='_blank' rel='noreferrer'*/}
+                    {/*       className='me-3'>{organisation.linkText}</a>*/}
+                    {/*    <FontAwesomeIcon icon={faAngleDoubleRight} className='fs-4 py-2'/>*/}
+                    {/*</button>*/}
+                    <div>
+                        <a className='btn py-0 btn-outline-primary my-3 me-3 d-flex align-items-center fit-content'
+                           href={organisation.website}
+                           target='_blank' rel='noreferrer'>
+                            Oficialus puslapis <FontAwesomeIcon icon={faAngleDoubleRight} className='fs-4 py-2 ps-3 pe-0'/>
+                        </a>
+                    </div>
                 </div>}
             </div>}
         </div>
