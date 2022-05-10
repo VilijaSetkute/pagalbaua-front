@@ -24,6 +24,7 @@ const HelpInLt = () => {
     const [getKids, setKids] = useState([])
 
     async function getAllOrgs() {
+        setFilter('all')
         const financeData = await http.get('/financeLTList')
         if (financeData.success) {
             setFinance(financeData.financeLtList)
@@ -48,10 +49,10 @@ const HelpInLt = () => {
         if (kidsData.success) {
             setKids(kidsData.kidList)
         }
-        setFilter('all')
     }
 
     async function getLocation(city) {
+        setFilter(city)
         const financeData = await http.post('/FinanceOrgLocation', {city: city})
         if (financeData.success) {
             setFinance(financeData.filteredList)
@@ -76,7 +77,6 @@ const HelpInLt = () => {
         if (kidsData.success) {
             setKids(kidsData.filteredList)
         }
-        setFilter(city)
     }
 
     useEffect(() => {
